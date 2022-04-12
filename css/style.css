@@ -1864,6 +1864,174 @@ a {
   }
 }
 
+.js-scroll {
+  opacity: 0;
+  -webkit-transition: opacity 0ms;
+  -o-transition: opacity 0ms;
+  transition: opacity 0ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.js-scroll.scrolled.fade-in {
+  -webkit-animation: fade-in 1s ease-in-out 0s;
+          animation: fade-in 1s ease-in-out 0s;
+}
+
+.js-scroll.scrolled.slide-in-left {
+  -webkit-animation: slide-in-left 1s ease-in-out 0s;
+          animation: slide-in-left 1s ease-in-out 0s;
+}
+
+.js-scroll.scrolled.slide-in-top {
+  -webkit-animation: slide-in-top 1s ease-in-out 0s;
+          animation: slide-in-top 1s ease-in-out 0s;
+}
+
+.js-scroll.scrolled.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 1s ease-in-out 0s;
+          animation: slide-in-bottom 1s ease-in-out 0s;
+}
+
+.js-scroll.scrolled.slide-in-right {
+  -webkit-animation: slide-in-right 1s ease-in-out 0s;
+          animation: slide-in-right 1s ease-in-out 0s;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 1200px) {
   .navbar-toggler {
     display: none !important;
@@ -2333,6 +2501,21 @@ a {
   .info__author::after {
     display: none;
   }
+
+  .js-scroll.scrolled.slide-in-left {
+    -webkit-animation: slide-in-top 0.6s ease-in-out 0s;
+            animation: slide-in-top 0.6s ease-in-out 0s;
+  }
+
+  .js-scroll.scrolled.slide-in-bottom {
+    -webkit-animation: slide-in-top 0.6s ease-in-out 0s;
+            animation: slide-in-top 0.6s ease-in-out 0s;
+  }
+
+  .js-scroll.scrolled.slide-in-right {
+    -webkit-animation: fade-in-top 0.6s ease-in-out 0s;
+            animation: fade-in-top 0.6s ease-in-out 0s;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2468,5 +2651,20 @@ a {
     background-color: #fff;
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
+  }
+}
+
+@media (min-height: 1100px) {
+  .js-scroll {
+    opacity: 1;
+  }
+
+  .js-scroll.scrolled.fade-in,
+  .js-scroll.scrolled.slide-in-bottom,
+  .js-scroll.scrolled.slide-in-left,
+  .js-scroll.scrolled.slide-in-right,
+  .js-scroll.scrolled.slide-in-top {
+    -webkit-animation: none !important;
+            animation: none !important;
   }
 }
