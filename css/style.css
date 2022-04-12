@@ -1248,6 +1248,7 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background: none;
 }
 
 .contact__form-btn:hover {
@@ -1786,6 +1787,10 @@ a {
   text-decoration: none !important;
 }
 
+.section {
+  overflow-x: hidden !important;
+}
+
 .theme__path {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1901,6 +1906,7 @@ a {
   .navbar {
     -webkit-animation: fade 0.3s linear;
             animation: fade 0.3s linear;
+    padding: 0;
   }
 
   .navbar.active {
@@ -1951,6 +1957,10 @@ a {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+
+  .theme-dark .navbar.active {
+    background-color: #000000;
   }
 
   .section__start-blog .start__item.second-item {
@@ -2257,6 +2267,7 @@ a {
 @media (max-width: 576px) {
   .section__start-blog .container .theme-switcher {
     top: 0;
+    right: 20px;
   }
 
   .section__start-blog .start__item.first-item {
@@ -2265,6 +2276,7 @@ a {
 
   .section__start-podcast .container .theme-switcher {
     top: 0;
+    right: 20px;
   }
 
   .section__start-podcast .start__item.first-item {
