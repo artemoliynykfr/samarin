@@ -723,9 +723,6 @@
 }
 
 .section__updates {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF2C5), to(#FFFFFF));
-  background: -o-linear-gradient(top, #FFF2C5 0%, #FFFFFF 100%);
-  background: linear-gradient(180deg, #FFF2C5 0%, #FFFFFF 100%);
   padding-bottom: 69px;
 }
 
@@ -785,6 +782,21 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.theme-dark .updates__title,
+.theme-dark .updates__text {
+  color: #fff;
+}
+
+.theme-dark .updates__form-input {
+  color: #4D5566;
+}
+
+.theme-dark .updates__form-input:focus-visible {
+  -webkit-box-shadow: 0 4px 5px #ffffff;
+          box-shadow: 0 4px 5px #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .section__work {
@@ -901,14 +913,14 @@
   transition: background-size 1s;
 }
 
-.project__item-title:hover .underline {
-  background-size: 100% 100%;
-}
-
 .project__item {
   padding: 16px 8px 25px;
   background: #FCA61F;
   border-radius: 57px;
+}
+
+.project__item:hover .project__item-title .underline {
+  background-size: 100% 100%;
 }
 
 .project__item-img {
@@ -1233,6 +1245,17 @@
   border: 4px solid #4D5566;
   border-radius: 16px;
   padding: 24px 66px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact__form-btn:hover {
+  background-color: #4D5566;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact__item {
@@ -1301,10 +1324,6 @@
   transition: background-size 1s;
 }
 
-.blog__title:hover .underline {
-  background-size: 100% 100%;
-}
-
 .blog__text {
   font-size: 16px;
   line-height: 24px;
@@ -1314,6 +1333,10 @@
 
 .blog__item {
   height: 100%;
+}
+
+.blog__item:hover .blog__title .underline {
+  background-size: 100% 100%;
 }
 
 .blog__body {
@@ -1345,6 +1368,7 @@
   background: rgba(0, 0, 0, 0.07);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -1375,6 +1399,11 @@
 .blog__body-column .blog__item-content {
   max-width: 488px;
   width: 100%;
+}
+
+.theme-dark .underline {
+  background-image: -o-linear-gradient(transparent calc(100% - 2px), #ffffff 2px);
+  background-image: linear-gradient(transparent calc(100% - 2px), #ffffff 2px);
 }
 
 .theme-dark .blog__mode {
@@ -1796,6 +1825,14 @@ a {
   background: none;
   -webkit-backdrop-filter: none;
           backdrop-filter: none;
+}
+
+.theme-dark .theme-switcher {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .theme-switcher {
