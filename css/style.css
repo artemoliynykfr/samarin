@@ -2262,6 +2262,11 @@ a {
     padding-left: 25px;
   }
 
+  .footer__icons a img {
+    width: 60px;
+    height: auto;
+  }
+
   .page__title {
     font-size: 48px;
   }
