@@ -2472,18 +2472,3 @@ a {
             backdrop-filter: none;
   }
 }
-
-@media (min-height: 1100px) {
-  .js-scroll {
-    opacity: 1;
-  }
-
-  .js-scroll.scrolled.fade-in,
-  .js-scroll.scrolled.slide-in-bottom,
-  .js-scroll.scrolled.slide-in-left,
-  .js-scroll.scrolled.slide-in-right,
-  .js-scroll.scrolled.slide-in-top {
-    -webkit-animation: none !important;
-            animation: none !important;
-  }
-}
